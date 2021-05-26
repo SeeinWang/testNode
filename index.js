@@ -2,8 +2,11 @@ const user = require('./user');
 
 const express=require('express');
 
+const cors = require('cors');
+
 const app=express();
 
+app.use(cors());
 
 /* const userRef =  db.collection('users').doc('YFYD4ll4jahjrA5OzqhgehUoEk12');
 const updateName = async () => {
