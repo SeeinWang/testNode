@@ -1,0 +1,23 @@
+{
+  "name": "testnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeeinWang/testNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeeinWang/testNode/issues"
+  },
+  "homepage": "https://github.com/SeeinWang/testNode#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase-admin": "^9.8.0"
+  }
+}
