@@ -4,7 +4,11 @@ const express=require('express');
 
 const cors = require('cors');
 
+const Joi = require('joi');
+
 const app=express();
+
+app.use(express.json());
 
 app.use(cors());
 
@@ -24,8 +28,11 @@ const updateName = async () => {
 app.get('/update',(req, res) =>
 {
 user.updateName();
-res.send('success!!!');
+res.status(200).json({
+    message:'success'
+})
 });
+
 
 //PORT 
 const port = process.env.PORT  || 5000;
